@@ -59,6 +59,11 @@ form
         text-align: center;
     }
 
+input[type="file"] 
+	{
+    	display: none;
+	}
+
 input[type="submit"]
     {
         background-color:  #175FD2;
@@ -298,6 +303,28 @@ div.TableContainer
         max-height: 75%;
         overflow: auto;
     }
+
+label.file
+	{
+    	background-color:  #929292;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), inset 0 2px 2px 0 rgba(255, 255, 255, 0.19);
+        border: 2px solid #1C1C1E;
+        margin: auto;
+        border-radius: 6px;
+        padding-right: 13px;
+        padding-left: 13px;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        margin-bottom:6px;
+        width: 100px;
+        font-family: SF Pro Round;
+        font-weight: lighter;
+        font-size: 11pt;
+        text-align: center;
+        color:#EAEAEA;
+        transition: 0.3s;
+        cursor: pointer;
+	}
 
 hr.header 
     {
@@ -541,12 +568,22 @@ td:hover
     cursor: pointer;
 }
 
+td.foto:hover
+{
+	 -webkit-filter:none;
+}
+
 td.timbri:hover
 {
     -webkit-filter: none; /* Safari 6.0 - 9.0 */
     filter: none;
 	border: 1px solid #414245;
 }
+
+label.file:hover
+	{
+    	background-color:  #585858;
+    }
 
 input[type="submit"]:hover
     {

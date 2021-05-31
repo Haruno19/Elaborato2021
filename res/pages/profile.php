@@ -47,7 +47,12 @@
                             <img src=../images/user/propic$gen.png class='propic'>
                             <h1>$user</h1>
                             <h3>$mail</h3><br><br>
-                            <form>
+               
+                            <form action='../scripts/PHP/upload.php' method='POST' enctype='multipart/form-data'>
+                            	<label for='myfile' class='file'>
+    								Seleziona il file
+								</label>
+                            	<input type='file' id='myfile' name='myfile' accept='image/*'><br>
                                 <input type='submit' style='width:auto;' value='Condividi le tue esperienze'>
                             </form><br><br>
                             <a href='privacy.php'><h4>Visualizza l'informativa sulla privacy</h4></a>

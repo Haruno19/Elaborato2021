@@ -1,25 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="http://code.jquery.com/jquery-latest.js"></script> 
-        <script>    
-            function updateTab()
-            {
-                var regID = $('#reg').val();
-                if(regID == '-')
-                    location.reload();
-                var data = {reg:regID}; 
-                $('#tab').load("res/scripts/PHP/parchiregione.php", data); 
-            }
-        </script>
-        
+        <link rel="stylesheet" href="../css/style.css">        
     </head>
         <?php
             set_include_path(getcwd());
             include("../scripts/PHP/hour.php");
             echo ">";
         ?>
-        <div id="cont" class="container">
+        <div id="cont" class="container" style="width:97.2vw">
             <nav>
                 <div class="left">
                     <h2 class="clock">&nbsp;<?php echo date("d/m/Y")?></h2>
@@ -32,8 +20,8 @@
                 </div>
             </nav>
             <hr>
-            <div class="CenterContent" style="width:96.5vw">
-                <h1>Foto caricarte dagli utenti</h1><br>
+            <div class="CenterContent">
+                <h1>Foto condivise dagli utenti</h1><br>
                 <form action="../../home.php">
                         <input type="submit" value="Home">
                 </form>
